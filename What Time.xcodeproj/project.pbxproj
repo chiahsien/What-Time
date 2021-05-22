@@ -13,6 +13,7 @@
 		5276BDEF2657F691006633FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5276BDED2657F691006633FC /* Main.storyboard */; };
 		5276BDF12657F692006633FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276BDF02657F692006633FC /* Assets.xcassets */; };
 		5276BDF42657F692006633FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5276BDF22657F692006633FC /* LaunchScreen.storyboard */; };
+		5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5276BDF02657F692006633FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5276BDF32657F692006633FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5276BDF52657F692006633FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTicksLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		5276BDE62657F691006633FC /* What Time */ = {
 			isa = PBXGroup;
 			children = (
+				5276BDFD2658ABEB006633FC /* Layers */,
 				5276BDE72657F691006633FC /* AppDelegate.swift */,
 				5276BDF02657F692006633FC /* Assets.xcassets */,
 				5276BDEB2657F691006633FC /* ClockViewController.swift */,
@@ -65,6 +68,14 @@
 				5276BDE92657F691006633FC /* SceneDelegate.swift */,
 			);
 			path = "What Time";
+			sourceTree = "<group>";
+		};
+		5276BDFD2658ABEB006633FC /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5276BDE82657F691006633FC /* AppDelegate.swift in Sources */,
+				5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */,
 				5276BDEC2657F691006633FC /* ClockViewController.swift in Sources */,
 				5276BDEA2657F691006633FC /* SceneDelegate.swift in Sources */,
 			);
