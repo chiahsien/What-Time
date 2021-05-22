@@ -28,15 +28,29 @@ final class ClockViewController: UIViewController {
         layer.font = UIFont.systemFont(ofSize: 14, weight: .light)
         return layer
     }()
+    private let hourHandLayer: ClockHandsLayer = {
+        let layer = ClockHandsLayer()
+        layer.type = .hour
+        layer.color = .red
+        return layer
+    }()
+    private let minuteHandLayer: ClockHandsLayer = {
+        let layer = ClockHandsLayer()
+        layer.type = .minute
+        layer.color = .darkGray
+        return layer
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         clockView.layer.borderColor = UIColor.gray.cgColor
         clockView.layer.borderWidth = 2
         clockView.layer.addSublayer(ticksLayer)
         clockView.layer.addSublayer(hoursLayer)
         clockView.layer.addSublayer(minutesLayer)
+        clockView.layer.addSublayer(minuteHandLayer)
+        clockView.layer.addSublayer(hourHandLayer)
     }
 
     override func viewDidLayoutSubviews() {
@@ -45,6 +59,9 @@ final class ClockViewController: UIViewController {
         setupTicksLayer()
         setupHoursLayer()
         setupMinutesLayer()
+        setupHandLayers()
+
+        updateTo(hour: 9, minute: 25)
     }
 }
 
@@ -67,5 +84,21 @@ private extension ClockViewController {
     func setupMinutesLayer() {
         minutesLayer.frame = clockView.bounds.insetBy(dx: 10, dy: 10)
         minutesLayer.setNeedsDisplay()
+    }
+
+    func setupHandLayers() {
+        minuteHandLayer.frame = clockView.bounds.insetBy(dx: 50, dy: 50)
+        minuteHandLayer.setNeedsDisplay()
+
+        hourHandLayer.frame = clockView.bounds.insetBy(dx: 50, dy: 50)
+        hourHandLayer.setNeedsDisplay()
+    }
+
+    func updateTo(hour h: Int, minute m: Int) {
+        let minutesAngle: Degrees = (Degrees(m) * 360 / 60)
+        let hourAngle: Degrees = (Degrees(h) * 360 / 12) + minutesAngle/12
+
+        minuteHandLayer.setAffineTransform(CGAffineTransform(rotationAngle: minutesAngle.inRadians))
+        hourHandLayer.setAffineTransform(CGAffineTransform(rotationAngle: hourAngle.inRadians))
     }
 }
