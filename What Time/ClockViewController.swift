@@ -14,15 +14,15 @@ final class ClockViewController: UIViewController {
     @IBOutlet private weak var minuteTextField: UITextField!
 
     private let ticksLayer = ClockTicksLayer()
-    private let hoursLayer: NumeralsLayer = {
-        let layer = NumeralsLayer()
+    private let hoursLayer: ClockNumeralsLayer = {
+        let layer = ClockNumeralsLayer()
         layer.data = ["12", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
         layer.color = .black
         layer.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
         return layer
     }()
-    private let minutesLayer: NumeralsLayer = {
-        let layer = NumeralsLayer()
+    private let minutesLayer: ClockNumeralsLayer = {
+        let layer = ClockNumeralsLayer()
         layer.data = ["00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
         layer.color = .black
         layer.font = UIFont.systemFont(ofSize: 14, weight: .light)

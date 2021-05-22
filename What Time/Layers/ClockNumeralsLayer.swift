@@ -1,5 +1,5 @@
 //
-//  NumeralsLayer.swift
+//  ClockNumeralsLayer.swift
 //  What Time
 //
 //  Created by Nelson on 2021/5/22.
@@ -11,7 +11,7 @@ import UIKit
 /// Most of the codes are from
 /// https://github.com/HarshilShah/Watchface
 ///
-final class NumeralsLayer: CAShapeLayer {
+final class ClockNumeralsLayer: CAShapeLayer {
     /// The values are displayed starting from top-center, and
     /// moving in a clockwise direction from there. The first value
     /// will always remain in the top-center position, and to
