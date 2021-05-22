@@ -14,6 +14,7 @@
 		5276BDF12657F692006633FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5276BDF02657F692006633FC /* Assets.xcassets */; };
 		5276BDF42657F692006633FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5276BDF22657F692006633FC /* LaunchScreen.storyboard */; };
 		5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */; };
+		5276BDFF265912F8006633FC /* NumeralsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BDFE265912F8006633FC /* NumeralsLayer.swift */; };
 		5276BE01265916BF006633FC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE00265916BF006633FC /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		5276BDF32657F692006633FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5276BDF52657F692006633FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTicksLayer.swift; sourceTree = "<group>"; };
+		5276BDFE265912F8006633FC /* NumeralsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralsLayer.swift; sourceTree = "<group>"; };
 		5276BE00265916BF006633FC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */,
+				5276BDFE265912F8006633FC /* NumeralsLayer.swift */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				5276BDE82657F691006633FC /* AppDelegate.swift in Sources */,
 				5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */,
 				5276BDEC2657F691006633FC /* ClockViewController.swift in Sources */,
+				5276BDFF265912F8006633FC /* NumeralsLayer.swift in Sources */,
 				5276BDEA2657F691006633FC /* SceneDelegate.swift in Sources */,
 				5276BE01265916BF006633FC /* Utilities.swift in Sources */,
 			);

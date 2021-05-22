@@ -7,6 +7,11 @@
 
 import UIKit
 
+///
+/// Most of the codes are from
+/// https://github.com/HarshilShah/Watchface
+///
+
 typealias Degrees = CGFloat
 extension Degrees {
     /// Returns the value of the current angle as converted to radians.
