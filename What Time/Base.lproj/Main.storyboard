@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqZ-2z-3ba" userLabel="Clock View" customClass="ClockView" customModule="What_Time" customModuleProvider="target">
-                                <rect key="frame" x="20" y="266" width="374" height="374"/>
+                                <rect key="frame" x="20" y="52" width="374" height="374"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="GqZ-2z-3ba" secondAttribute="height" multiplier="1:1" id="igW-wk-BQU"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-9Y-ozy" userLabel="Answer Stack View">
-                                <rect key="frame" x="145.5" y="664" width="123" height="34"/>
+                                <rect key="frame" x="145.5" y="450" width="123" height="34"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-Ov-oDw" userLabel="Hour Text Field">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
@@ -62,8 +62,8 @@
                             <constraint firstItem="abQ-9Y-ozy" firstAttribute="centerX" secondItem="GqZ-2z-3ba" secondAttribute="centerX" id="00J-Sb-TUN"/>
                             <constraint firstItem="GqZ-2z-3ba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9rI-f7-qw7"/>
                             <constraint firstItem="abQ-9Y-ozy" firstAttribute="top" secondItem="GqZ-2z-3ba" secondAttribute="bottom" constant="24" id="REu-ur-fdW"/>
+                            <constraint firstItem="GqZ-2z-3ba" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="g5y-1y-jrc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GqZ-2z-3ba" secondAttribute="trailing" constant="20" id="gdA-Uv-EnV"/>
-                            <constraint firstItem="GqZ-2z-3ba" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xL7-Cq-CfD"/>
                         </constraints>
                     </view>
                     <connections>

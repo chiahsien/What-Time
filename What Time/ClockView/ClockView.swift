@@ -125,13 +125,12 @@ class ClockView: UIView {
         self.init(frame: .zero)
     }
 
-    func setup(hour h: Int, minute m: Int) {
+    override func draw(_ rect: CGRect) {
         setupClockView()
         setupTicksLayer()
         setupHoursLayer()
         setupMinutesLayer()
         setupHandLayers()
-        updateTo(hour: h, minute: m)
     }
 
     func updateTo(hour h: Int, minute m: Int) {

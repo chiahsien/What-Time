@@ -15,10 +15,25 @@ final class ClockViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        hourTextField.addDoneToolbar("下一個", onDone: (target: self, action: #selector(hourTextFieldDidReturn)))
+        minuteTextField.addDoneToolbar("確定", onDone: (target: self, action: #selector(minuteTextFieldDidReturn)))
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+            self.clockView.updateTo(hour: 7, minute: 23)
+            self.hourTextField.becomeFirstResponder()
+        }
+    }
+}
+
+private extension ClockViewController {
+    @objc
+    func hourTextFieldDidReturn() {
+
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        clockView.setup(hour: 7, minute: 23)
+    @objc
+    func minuteTextFieldDidReturn() {
+
     }
 }
