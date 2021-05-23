@@ -17,6 +17,7 @@
 		5276BDFF265912F8006633FC /* ClockNumeralsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BDFE265912F8006633FC /* ClockNumeralsLayer.swift */; };
 		5276BE01265916BF006633FC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE00265916BF006633FC /* Utilities.swift */; };
 		5276BE03265948DD006633FC /* ClockHandsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE02265948DD006633FC /* ClockHandsLayer.swift */; };
+		5276BE05265A1264006633FC /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE04265A1264006633FC /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		5276BDFE265912F8006633FC /* ClockNumeralsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockNumeralsLayer.swift; sourceTree = "<group>"; };
 		5276BE00265916BF006633FC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5276BE02265948DD006633FC /* ClockHandsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHandsLayer.swift; sourceTree = "<group>"; };
+		5276BE04265A1264006633FC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 		5276BDE62657F691006633FC /* What Time */ = {
 			isa = PBXGroup;
 			children = (
-				5276BDFD2658ABEB006633FC /* Layers */,
+				5276BE06265A126D006633FC /* ClockView */,
 				5276BDE72657F691006633FC /* AppDelegate.swift */,
 				5276BDF02657F692006633FC /* Assets.xcassets */,
 				5276BDEB2657F691006633FC /* ClockViewController.swift */,
@@ -85,6 +87,15 @@
 				5276BDFB2658ABDD006633FC /* ClockTicksLayer.swift */,
 			);
 			path = Layers;
+			sourceTree = "<group>";
+		};
+		5276BE06265A126D006633FC /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				5276BDFD2658ABEB006633FC /* Layers */,
+				5276BE04265A1264006633FC /* ClockView.swift */,
+			);
+			path = ClockView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				5276BE03265948DD006633FC /* ClockHandsLayer.swift in Sources */,
 				5276BDFF265912F8006633FC /* ClockNumeralsLayer.swift in Sources */,
 				5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */,
+				5276BE05265A1264006633FC /* ClockView.swift in Sources */,
 				5276BDEC2657F691006633FC /* ClockViewController.swift in Sources */,
 				5276BDEA2657F691006633FC /* SceneDelegate.swift in Sources */,
 				5276BE01265916BF006633FC /* Utilities.swift in Sources */,
