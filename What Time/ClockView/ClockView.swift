@@ -133,11 +133,11 @@ class ClockView: UIView {
         setupHandLayers()
     }
 
-    func updateTo(hour h: Int, minute m: Int) {
-        guard h != currentHour, m != currentMinute else { return }
-
-        let minutesAngle: Degrees = (Degrees(m) * 360 / 60)
-        let hourAngle: Degrees = (Degrees(h) * 360 / 12) + minutesAngle / 12
+    func generateRandomTime() {
+        let hour = Int.random(in: 1...12)
+        let minute = Int.random(in: 0...11) * 5
+        let minutesAngle: Degrees = (Degrees(minute) * 360 / 60)
+        let hourAngle: Degrees = (Degrees(hour) * 360 / 12) + minutesAngle / 12
 
         var transform = CATransform3DIdentity
         transform = CATransform3DRotate(transform, minutesAngle.inRadians, 0, 0, 1)
@@ -147,8 +147,12 @@ class ClockView: UIView {
         transform = CATransform3DRotate(transform, hourAngle.inRadians, 0, 0, 1)
         hourHandLayer.transform = transform
 
-        currentHour = h
-        currentMinute = m
+        currentHour = hour
+        currentMinute = minute
+    }
+
+    func isTime(hours h: Int, minutes m: Int) -> Bool {
+        return currentHour == h && currentMinute == m
     }
 }
 

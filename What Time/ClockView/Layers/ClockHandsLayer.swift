@@ -21,7 +21,7 @@ final class ClockHandsLayer: CAShapeLayer {
             case .minute:
                 return 1
             case .hour:
-                return 0.7
+                return 0.5
             }
         }
     }
