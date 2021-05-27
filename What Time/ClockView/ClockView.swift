@@ -134,8 +134,14 @@ class ClockView: UIView {
     }
 
     func generateRandomTime() {
-        let hour = Int.random(in: 1...12)
-        let minute = Int.random(in: 0...11) * 5
+        var hour: Int
+        var minute: Int
+
+        repeat {
+            hour = Int.random(in: 1...12)
+            minute = Int.random(in: 0...11) * 5
+        } while currentHour == hour || currentMinute == minute
+
         let minutesAngle: Degrees = (Degrees(minute) * 360 / 60)
         let hourAngle: Degrees = (Degrees(hour) * 360 / 12) + minutesAngle / 12
 
