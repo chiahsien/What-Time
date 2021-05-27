@@ -80,12 +80,17 @@ class ClockView: UIView {
         }
     }
 
-    private let ticksLayer = ClockTicksLayer()
+    private let ticksLayer: ClockTicksLayer = {
+        let layer = ClockTicksLayer()
+        layer.contentsScale = UIScreen.main.scale
+        return layer
+    }()
     private let hoursLayer: ClockNumeralsLayer = {
         let layer = ClockNumeralsLayer()
         layer.data = ["12", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
         layer.color = .black
         layer.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
+        layer.contentsScale = UIScreen.main.scale
         return layer
     }()
     private let minutesLayer: ClockNumeralsLayer = {
@@ -93,18 +98,21 @@ class ClockView: UIView {
         layer.data = ["00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
         layer.color = .black
         layer.font = UIFont.systemFont(ofSize: 14, weight: .light)
+        layer.contentsScale = UIScreen.main.scale
         return layer
     }()
     private let hourHandLayer: ClockHandsLayer = {
         let layer = ClockHandsLayer()
         layer.type = .hour
         layer.color = .red
+        layer.contentsScale = UIScreen.main.scale
         return layer
     }()
     private let minuteHandLayer: ClockHandsLayer = {
         let layer = ClockHandsLayer()
         layer.type = .minute
         layer.color = .darkGray
+        layer.contentsScale = UIScreen.main.scale
         return layer
     }()
 
