@@ -25,38 +25,64 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="abQ-9Y-ozy" userLabel="Answer Stack View">
-                                <rect key="frame" x="145.5" y="450" width="123" height="34"/>
+                                <rect key="frame" x="107.5" y="450" width="199.5" height="44.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-Ov-oDw" userLabel="Hour Text Field">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
-                                        <color key="backgroundColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-Ov-oDw" userLabel="Hour Field 1" customClass="ClockTextField" customModule="What_Time" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="44.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="wiq-iv-ryP"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="PTR-GV-8Pv"/>
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="bjA-Z2-b4W"/>
                                         </connections>
                                     </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJf-TW-MJW" userLabel="Hour Field 2" customClass="ClockTextField" customModule="What_Time" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="0.0" width="40" height="44.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="y15-S5-t0y"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="tAm-T5-SLs"/>
+                                        </connections>
+                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-lB-LSL" userLabel="Label">
-                                        <rect key="frame" x="58" y="0.0" width="7" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
+                                        <rect key="frame" x="96" y="0.0" width="7.5" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-eO-0lC" userLabel="Minute Text Field">
-                                        <rect key="frame" x="73" y="0.0" width="50" height="34"/>
-                                        <color key="backgroundColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-eO-0lC" userLabel="Minute Field 1" customClass="ClockTextField" customModule="What_Time" customModuleProvider="target">
+                                        <rect key="frame" x="111.5" y="0.0" width="40" height="44.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="7yw-ZD-Q4G"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Nu4-wh-ZMo"/>
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="ybV-bf-meY"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xR-ry-9Qp" userLabel="Minute Field 2" customClass="ClockTextField" customModule="What_Time" customModuleProvider="target">
+                                        <rect key="frame" x="159.5" y="0.0" width="40" height="44.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="ZhD-PK-vaH"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="wj9-ld-kZK"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -74,8 +100,10 @@
                     </view>
                     <connections>
                         <outlet property="clockView" destination="GqZ-2z-3ba" id="FPX-a3-9iG"/>
-                        <outlet property="hourTextField" destination="Mmw-Ov-oDw" id="ZRM-Lt-Xzd"/>
-                        <outlet property="minuteTextField" destination="5V3-eO-0lC" id="XVL-z5-f9u"/>
+                        <outletCollection property="inputFields" destination="Mmw-Ov-oDw" collectionClass="NSMutableArray" id="swH-E8-2QC"/>
+                        <outletCollection property="inputFields" destination="JJf-TW-MJW" collectionClass="NSMutableArray" id="k5n-EV-EZc"/>
+                        <outletCollection property="inputFields" destination="5V3-eO-0lC" collectionClass="NSMutableArray" id="yX7-zB-azj"/>
+                        <outletCollection property="inputFields" destination="5xR-ry-9Qp" collectionClass="NSMutableArray" id="jNI-5O-bdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

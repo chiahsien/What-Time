@@ -18,7 +18,7 @@
 		5276BE01265916BF006633FC /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE00265916BF006633FC /* Utilities.swift */; };
 		5276BE03265948DD006633FC /* ClockHandsLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE02265948DD006633FC /* ClockHandsLayer.swift */; };
 		5276BE05265A1264006633FC /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE04265A1264006633FC /* ClockView.swift */; };
-		5276BE08265A747C006633FC /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276BE07265A747C006633FC /* UITextField+Extension.swift */; };
+		529C19CA266BE77E00B34234 /* ClockTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529C19C9266BE77E00B34234 /* ClockTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		5276BE00265916BF006633FC /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5276BE02265948DD006633FC /* ClockHandsLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHandsLayer.swift; sourceTree = "<group>"; };
 		5276BE04265A1264006633FC /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		5276BE07265A747C006633FC /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		529C19C9266BE77E00B34234 /* ClockTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +72,7 @@
 				5276BE09265A7485006633FC /* Helpers */,
 				5276BDE72657F691006633FC /* AppDelegate.swift */,
 				5276BDF02657F692006633FC /* Assets.xcassets */,
+				529C19C9266BE77E00B34234 /* ClockTextField.swift */,
 				5276BDEB2657F691006633FC /* ClockViewController.swift */,
 				5276BDF52657F692006633FC /* Info.plist */,
 				5276BDF22657F692006633FC /* LaunchScreen.storyboard */,
@@ -103,7 +104,6 @@
 		5276BE09265A7485006633FC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				5276BE07265A747C006633FC /* UITextField+Extension.swift */,
 				5276BE00265916BF006633FC /* Utilities.swift */,
 			);
 			path = Helpers;
@@ -182,11 +182,11 @@
 				5276BDE82657F691006633FC /* AppDelegate.swift in Sources */,
 				5276BE03265948DD006633FC /* ClockHandsLayer.swift in Sources */,
 				5276BDFF265912F8006633FC /* ClockNumeralsLayer.swift in Sources */,
+				529C19CA266BE77E00B34234 /* ClockTextField.swift in Sources */,
 				5276BDFC2658ABDD006633FC /* ClockTicksLayer.swift in Sources */,
 				5276BE05265A1264006633FC /* ClockView.swift in Sources */,
 				5276BDEC2657F691006633FC /* ClockViewController.swift in Sources */,
 				5276BDEA2657F691006633FC /* SceneDelegate.swift in Sources */,
-				5276BE08265A747C006633FC /* UITextField+Extension.swift in Sources */,
 				5276BE01265916BF006633FC /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
