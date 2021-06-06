@@ -36,7 +36,9 @@ extension ClockViewController: UITextFieldDelegate, ClockTextFieldDelegate {
             if textField.tag < 3 {
                 inputFields[textField.tag + 1].becomeFirstResponder()
             } else {
-                checkAnswer()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                    self.checkAnswer()
+                }
             }
         }
         return false
